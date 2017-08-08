@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	div(class='container')
+		div(class='panel panel-default')
+			div(class='panel-heading')
+				a(href="/nova-noticia" type="button" class="btn btn-primary btn-sm")
+					span(class='glyphicon glyphicon-arrow-left')
+					| &nbsp;Voltar
+			div(class='panel-body')
+				form(id="form" method="post" action="")
+					div(class="form-group")
+						input(type="hidden" class="form-control" name="autor" required readonly value="Jairo Santos")
+						input(type="text" class="form-control" placeholder="Título" name="titulo" id="titulo" value="")
+					div(class="form-group")
+						input(type="text" class="form-control" placeholder="Retranca" name="retranca" id="retranca" value="")
+
